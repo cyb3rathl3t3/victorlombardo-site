@@ -413,3 +413,11 @@ footer{border-top:1px solid var(--line2);padding:3rem 0 2.4rem;color:var(--muted
 .lightbox img{max-height:82vh;max-width:94vw;width:auto;border-radius:8px}
 .lb-cap{color:var(--gold2);font-family:var(--serif);text-align:center}
 .lb-close{position:absolute;top:1rem;right:1.2rem;background:none;border:1px solid var(--line);color:var(--gold2);width:44px;height:44px;border-radius:50%;font-size:1.6rem;line-height:1;cursor:pointer}
+
+/* art hero */
+.art-hero{margin:0 0 1.6rem;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--panel);box-shadow:0 40px 90px -30px rgba(0,0,0,.95)}
+.art-hero img{width:100%}
+.art-hero .art-open{display:block;width:100%;background:none;border:0;padding:0;cursor:zoom-in}
+.art-hero figcaption{padding:1rem 1.2rem 1.2rem;display:flex;flex-direction:column;gap:.25rem}
+.art-hero figcaption strong{font:400 1.4rem/1.2 var(--serif);color:var(--gold2)}
+.art-hero figcaption span{color:var(--muted)}
