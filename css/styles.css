@@ -120,7 +120,8 @@ section{position:relative;padding:clamp(5rem,10vw,8rem) 0}
 .cover-stack img:nth-child(2){right:0;bottom:0;z-index:1;opacity:.92;transform:rotate(4deg)}
 .cover-stack:hover img:nth-child(1){transform:translate(-8px,-8px) rotate(-2deg)}
 .cover-stack:hover img:nth-child(2){transform:translate(8px,8px) rotate(6deg)}
-.cover-stack.single img{width:92%;left:4%;top:4%}
+.cover-stack.single{aspect-ratio:auto}
+.cover-stack.single img{position:static;transform:none!important;width:92%;left:4%;top:4%}
 .badge{display:inline-flex;align-items:center;gap:.45rem;border:1px solid var(--line);border-radius:999px;padding:.42rem .9rem;font:600 .66rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold2);background:rgba(214,173,98,.06)}
 .artist h3{font-size:clamp(2rem,3.6vw,2.9rem);margin:1rem 0 .4rem}
 .artist .genre{font-family:var(--serif);font-style:italic;color:var(--gold2);font-size:1.12rem;margin-bottom:1rem}
@@ -421,3 +422,10 @@ footer{border-top:1px solid var(--line2);padding:3rem 0 2.4rem;color:var(--muted
 .art-hero figcaption{padding:1rem 1.2rem 1.2rem;display:flex;flex-direction:column;gap:.25rem}
 .art-hero figcaption strong{font:400 1.4rem/1.2 var(--serif);color:var(--gold2)}
 .art-hero figcaption span{color:var(--muted)}
+/* listen */
+.lyric-listen{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;margin:0 1.2rem;padding:1rem 0 1.4rem;border-top:1px solid var(--line2)}
+.lyric-listen>span{font:600 .62rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted2)}
+.cover-stack.single{display:block}
+.cover-stack.single{aspect-ratio:auto}
+.cover-stack.single img{position:static;transform:none!important;width:100%;max-width:520px;height:auto;aspect-ratio:1/1;border-radius:14px;margin:0 auto;display:block}
+.album-tracks{columns:2 220px;column-gap:2rem;padding-left:1.2rem}
