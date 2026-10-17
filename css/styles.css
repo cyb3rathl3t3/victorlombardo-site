@@ -429,3 +429,17 @@ footer{border-top:1px solid var(--line2);padding:3rem 0 2.4rem;color:var(--muted
 .cover-stack.single{aspect-ratio:auto}
 .cover-stack.single img{position:static;transform:none!important;width:100%;max-width:520px;height:auto;aspect-ratio:1/1;border-radius:14px;margin:0 auto;display:block}
 .album-tracks{columns:2 220px;column-gap:2rem;padding-left:1.2rem}
+/* trilogy */
+.trilogy{margin-bottom:clamp(4.5rem,9vw,7rem)}
+.tri-head{text-align:center;max-width:46rem;margin:0 auto 2.2rem}
+.tri-head h3{margin:.8rem 0 .6rem}
+.tri-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.6rem}
+.tri-card{display:flex;flex-direction:column;gap:.5rem;padding:1rem 1rem 1.4rem;border:1px solid var(--line2);border-radius:14px;background:var(--panel)}
+.tri-card img{width:100%;height:auto;aspect-ratio:1/1;border-radius:10px;box-shadow:0 24px 60px -24px rgba(0,0,0,.9)}
+.tri-num{margin-top:.8rem;font:600 .62rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
+.tri-card h4{font:400 1.25rem/1.25 var(--serif);color:var(--ink);margin:0}
+.tri-meta{font-size:.8rem;color:var(--muted2);margin:0 0 .6rem}
+.tri-card .links{margin-top:auto}
+.tri-credit{text-align:center;margin-top:1.6rem}
+@media(max-width:860px){.tri-grid{grid-template-columns:1fr}}
+/* /trilogy */
