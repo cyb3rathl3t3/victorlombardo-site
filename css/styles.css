@@ -443,3 +443,21 @@ footer{border-top:1px solid var(--line2);padding:3rem 0 2.4rem;color:var(--muted
 .tri-credit{text-align:center;margin-top:1.6rem}
 @media(max-width:860px){.tri-grid{grid-template-columns:1fr}}
 /* /trilogy */
+/* nav spacing */
+@media (min-width:821px){
+  .nav .nav-sub,.nav .nav-opt{display:list-item}
+  .nav .wrap{flex-direction:column;justify-content:center;height:auto;gap:.85rem;padding-top:.9rem;padding-bottom:.85rem}
+  .nav ul{flex-wrap:wrap;justify-content:center;gap:.6rem 2rem}
+  .nav ul a{letter-spacing:.2em}
+  .nav.scrolled .wrap{gap:.6rem;padding-top:.65rem;padding-bottom:.6rem}
+  .achv-block,.lyric{scroll-margin-top:112px}
+  #achievements,#milestones{scroll-margin-top:70px}
+  section[id]{scroll-margin-top:96px}
+}
+@media (min-width:1560px){
+  .nav .wrap{flex-direction:row;justify-content:space-between;height:72px;padding:0;gap:3rem}
+  .nav ul{flex-wrap:nowrap;gap:2rem}
+  .nav.scrolled .wrap{padding:0}
+}
+@media (min-width:821px) and (max-width:1100px){.nav ul{gap:.6rem 1.35rem}.nav ul a{letter-spacing:.14em;font-size:.7rem}}
+/* /nav spacing */
