@@ -464,3 +464,13 @@ footer{border-top:1px solid var(--line2);padding:3rem 0 2.4rem;color:var(--muted
 }
 @media (min-width:821px) and (max-width:1100px){.nav ul{gap:.6rem 1.35rem}.nav ul a{letter-spacing:.14em;font-size:.7rem}}
 /* /nav spacing */
+
+/* Living Posters */
+@media (min-width:1101px){.services{grid-template-columns:repeat(4,1fr)}}
+.svc .tagline a{color:inherit;text-decoration:none}
+.lp-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.4rem}
+.lp-gallery figure{margin:0}
+.lp-gallery video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:10px;border:1px solid var(--line2);background:#000;transition:transform .35s,border-color .35s}
+.lp-gallery video:hover{transform:translateY(-6px);border-color:var(--gold)}
+.lp-gallery figcaption{text-align:center;color:var(--muted2);font-size:.8rem;margin-top:.6rem}
+@media (max-width:700px){.lp-gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.8rem;scrollbar-width:thin}.lp-gallery figure{flex:0 0 58vw;scroll-snap-align:start}}
